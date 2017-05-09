@@ -1,0 +1,11 @@
+name: get
+runner_type: run-python
+description: "Get value in Redis server"
+enabled: true
+entry_point: "get.py"
+parameters:
+    key:
+        type: string
+        description: "Key to retrieve in Redis"
+        required: true
+        position: 0
