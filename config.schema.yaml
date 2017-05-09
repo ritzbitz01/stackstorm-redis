@@ -16,4 +16,4 @@
     type: "integer"
     secret: false
     required: true
-    default: true
+    default: 0
