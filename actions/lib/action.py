@@ -10,9 +10,9 @@ class RedisBaseAction(Action):
         self.redis = self._get_client()
 
     def _get_client(self):
-        hostConfig = self.config['host']
-        portConfig = self.config['port']
-        dbConfig = self.config['db']
+        host = self.config['host']
+        port = self.config['port']
+        db = self.config['db']
 
-        client = redis.StrictRedis(host=hostConfig, port=portConfig, db=dbConfig)
+        client = redis.StrictRedis(host=host, port=port, db=db)
         return client

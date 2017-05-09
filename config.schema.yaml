@@ -1,0 +1,19 @@
+---
+  host:
+    description: "Redis server IP/name.  Default 127.0.0.1"
+    type: "string"
+    secret: false
+    required: true
+    default: "127.0.0.1"
+  port:
+    description: "Redis server port. Default 6379"
+    type: "integer"
+    secret: false
+    required: true
+    default: 6379
+  db:
+    description: "Redis DB value"
+    type: "integer"
+    secret: false
+    required: true
+    default: true
